@@ -4,19 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
-      <button class="menu">&#9776;</button>
+      <button id="menu">&#9776;</button>
     </header>
-    <hr>
-    <div class="link-wrapper">
+    <hr id="hr" />
+    <div id="link-wrapper">
       <div class="link">Home</div>
       <div class="link">projects</div>
       <div class="link">About me</div>
       <div class="link">Resume</div>
       <div class="link">Contact</div>
     </div>
+    <section id="home">
+      <div id="img">
+        <div id="img-wrapper">
+          <img src="./assets/Images/Liben.png" alt="">
+        </div>
+      </div>
+      <div class="text">
+        <p class="advent-pro">My name is Liben</p>
+      </div>
+      <div class="text">
+        <h2 class="montserrat">I'M A DEVELOPER</h2>
+      </div>
+      <div class="dicor text">
+        <img src="./assets/icons/icon1.png" alt="" />
+      </div>
+      <div id="socials">
+        <div><img src="./assets/icons/gmail_icon.png" alt="" /></div>
+        <div><img src="./assets/icons/github_icon.png" alt="" /></div>
+        <div><img src="./assets/icons/linkedin_icon.png" alt="" /></div>
+      </div>
+    </section>
   </body>
+  <script src="./script.js"></script>
 </html>

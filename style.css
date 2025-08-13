@@ -1,39 +1,99 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-body{
-    background-image: url(./assets/Images/image.png);
+body {
+  background-image: url(./assets/Images/image.png);
+  background-repeat:no-repeat;
+  background-size: cover;
 }
 
-header{
-    background-color: black;
-    padding-bottom: 3em;
+header {
+  background-color: black;
+  padding-bottom: 3em;
+}
+
+#menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2em;
+  color: white;
+  border: 0;
+  background-color: black;
+}
+
+#hr {
+  display: none;
+}
+
+#link-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.link {
+  color: white;
+  padding: 1em;
+  display: block;
+  /* background-color: white;
+  border-radius: 50%;
+  padding:8px; */
 }
 
 
-.menu{
-    position:absolute;
-    top:0;
-    right:0;
-    font-size: 2em;
-    color:white;
-    border:0;
-    background-color:black;
-
+#img-wrapper>img{
+  width:7em;
+  height:auto;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.link-wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    background-color:rgba(0, 0, 0, 0.6);
+.advent-pro {
+  font-family: "Advent Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.6em;
+  color: white;
 }
 
-.link{
-    color:rgba(255, 255, 255, 1);
-    padding:0.5em;
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: white;
+  font-size: 2em;
+}
+
+
+
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20%;
+}
+
+.dicor > img {
+  width: 120px;
+  height: 10px;
+  margin-top: 0.6em;
+}
+
+#socials {
+  display: flex;
+  align-items: center;
+}
+
+#socials > div {
+  margin: 1em;
 }
 
 /* .link{
@@ -44,8 +104,8 @@ header{
   display: block;
 } */
 
- /*this is working but i want develop the mobile first approach */
- /* header{
+/*this is working but i want develop the mobile first approach */
+/* header{
     margin:3%;
 }
 
@@ -54,3 +114,48 @@ header{
     justify-content:space-around;
     margin-left: 40%;
 }  */
+
+@media (min-width:481px){
+  /* #menu{
+    display:none;
+    position:static;
+  } */
+
+  header{
+    display:none;
+  }
+
+  #link-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 1);
+  /* display: none; */
+}
+}
+
+@media (min-width:800px){
+  .advent-pro{
+    font-size:2.1em;
+  }
+
+  .montserrat{
+    font-size:2.5em;
+  }
+}
+
+@media(min-width:801px){
+  #img{
+    align-self:flex-end;
+    margin-right:15%;
+  }
+
+  #img-wrapper>img{
+  width:12em;
+}
+
+ .text{
+  align-self:flex-start;
+  
+ }
+}
