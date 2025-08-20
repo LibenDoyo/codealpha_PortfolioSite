@@ -289,13 +289,71 @@ a {
 }
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* Contact */
-/* #contact > div > h4 {
-  border: 3px solid black;
+
+#contact > div > h4 {
+  border: 4px solid black;
   text-align: center;
   padding: 0.25em 1em;
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
-} */
+}
+
+.contact-p > p {
+  padding: 2em;
+  text-align: justify;
+}
+
+.form{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+}
+
+form>div{
+  padding-bottom:20px;
+}
+
+input{
+  border-width:0px 0px 3px 3px;
+  border-color: black;
+  height:48px;
+  width:243px;
+}
+
+input::placeholder{
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size:12px;
+}
+
+textarea{
+  border-width:0px 0px 3px 3px;
+  border-color: black;
+  width:243px;
+  height:165px
+}
+
+textarea::placeholder{
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size:12px;
+}
+
+.submit{
+  text-align: center;
+}
+
+.submit>button{
+  border-width:0px 3px;
+  padding:0px 25px;
+  height:40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size:13px;
+
+}
+
 
 @media (min-width: 481px){
   header {
@@ -354,6 +412,12 @@ a {
     text-align: justify;
     font-size: 1.3em;
   } 
+
+  .contact-p > p{
+    padding: 2em;
+    text-align: justify;
+    font-size: 1.3em;
+  }
 }
 
 @media (min-width: 550px) and (max-width: 1000px) {
@@ -378,7 +442,7 @@ a {
   #aboutme > div > p {
     padding: 2em;
     text-align: justify;
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
   /* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* portfolio */
@@ -391,6 +455,14 @@ a {
   #project .projects {
     height:33%;
     flex: 1 1 calc(50% - 10px); /* 2 per row */
+  }
+  /* /////////////////////////////////////////////////////////////////////////// */
+  /* contact */
+
+  .contact-p > p{
+    padding: 1em;
+    text-align: justify;
+    font-size: 1.5em;
   }
 }
 
@@ -510,6 +582,29 @@ a {
   font-size:1.9em;
   padding:0.25em 1.25em;
 }
+
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* contact */
+
+#contact > div > h4{
+  font-size:1.9em;
+  padding:0.25em 1.25em;
+}
+
+.contact-p > p{
+   padding: 1.2em;
+   text-align: justify;
+   font-size: 2em;
+}
+
+input{
+  width:609px;
+}
+
+textarea{
+  width:609px;
+}
 }
 
 @media (min-width: 1201px) {
@@ -579,6 +674,13 @@ a {
 .portfolio-title>h4{
   font-size: 1.9em;
   padding:0.25em 1em;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+/*contact  */
+#contact > div > h4{
+ font-size: 1.9em;
+ padding:0.25em 1em;
 }
 }
 
